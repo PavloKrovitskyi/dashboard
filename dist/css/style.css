@@ -227,7 +227,7 @@ a {
   text-align: right;
   background-color: var(--bg-secondary);
 }
-@media (min-width: 75em) {
+@media (min-width: 75.06125em) {
   .wrapper__burger_wrapper {
     display: none;
   }
@@ -278,7 +278,7 @@ a {
   background-color: var(--bg-secondary);
   box-shadow: 0 0.625rem 3.75rem 0 rgba(226, 236, 249, 0.5);
 }
-@media (min-width: 75em) {
+@media (min-width: 75.06125em) {
   .side_bar {
     flex: 0 0 19.125rem;
     padding: 2.25rem 1.75rem 4.75rem;
@@ -304,7 +304,7 @@ a {
 .side_bar__logo {
   margin-bottom: 1.875rem;
 }
-@media (min-width: 75em) {
+@media (min-width: 75.06125em) {
   .side_bar__logo {
     margin-bottom: 3.25rem;
   }
@@ -322,7 +322,7 @@ a {
   line-height: 1.5; /* 21/14 */
   letter-spacing: 0.01em;
 }
-@media (min-width: 75em) {
+@media (min-width: 75.06125em) {
   .logo__text {
     font-size: 1.625rem;
   }
@@ -441,27 +441,32 @@ a {
   line-height: 1.5;
   font-weight: 500;
 }
-@media (min-width: 75em) {
+@media (min-width: 75.06125em) {
   .page__title {
     margin-bottom: 3.125rem;
   }
 }
 
 .customers {
-  padding: 1.25rem 0.9375rem 1.875rem 0.9375rem;
+  padding: 1.25rem 0.625rem 1.875rem 0.9375rem;
   border-radius: 1rem;
   overflow: hidden;
   background-color: var(--bg-secondary);
   filter: drop-shadow(0 0.625rem 3.75rem rgba(226, 236, 249, 0.5));
 }
-@media (min-width: 75em) {
+@media (min-width: 75.06125em) {
   .customers {
     padding: 1.875rem 2.75rem 2.5rem 2.375rem;
     border-radius: 1.875rem;
   }
 }
 .customers__header:not(:last-child) {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+@media (min-width: 47.99875em) {
+  .customers__header:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
 }
 .customers__search {
   flex: 0 0 13.5rem;
@@ -518,6 +523,11 @@ a {
     justify-content: space-between;
     gap: 1rem;
     padding-block: 0.375rem;
+    padding-inline: 0.375rem;
+  }
+  .customers__row > span:nth-child(odd) {
+    background-color: var(--bg-primary);
+    border-radius: 0.375rem;
   }
   .customers__row > span::before {
     content: attr(data-label);

@@ -14,7 +14,7 @@
   }
   // .wrapper__burger_wrapper
   &__burger_wrapper {
-    @media (min-width: toEm(1200)) {
+    @media (min-width: toEm(1200.98)) {
       display: none;
     }
     position: fixed;
@@ -78,7 +78,7 @@
   padding: toRem(20) toRem(16) toRem(40);
   background-color: var(--bg-secondary);
   box-shadow: 0 toRem(10) toRem(60) 0 rgba(226, 236, 249, 0.5);
-  @media (min-width: toEm(1200)) {
+  @media (min-width: toEm(1200.98)) {
     flex: 0 0 toRem(306);
     padding: toRem(36) toRem(28) toRem(76);
   }
@@ -105,7 +105,7 @@
   // .side_bar__logo
   &__logo {
     margin-bottom: toRem(30);
-    @media (min-width: toEm(1200)) {
+    @media (min-width: toEm(1200.98)) {
       margin-bottom: toRem(52);
     }
   }
@@ -122,7 +122,7 @@
     font-weight: 600;
     line-height: 1.5; /* 21/14 */
     letter-spacing: 0.01em;
-    @media (min-width: toEm(1200)) {
+    @media (min-width: toEm(1200.98)) {
       font-size: toRem(26);
     }
   }
@@ -257,19 +257,19 @@
     font-size: toRem(24);
     line-height: 1.5;
     font-weight: 500;
-    @media (min-width: toEm(1200)) {
+    @media (min-width: toEm(1200.98)) {
       margin-bottom: toRem(50);
     }
   }
 }
 //======================================================
 .customers {
-  padding: toRem(20) toRem(15) toRem(30) toRem(15);
+  padding: toRem(20) toRem(10) toRem(30) toRem(15);
   border-radius: toRem(16);
   overflow: hidden;
   background-color: var(--bg-secondary);
   filter: drop-shadow(0 toRem(10) toRem(60) rgba(226, 236, 249, 0.5));
-  @media (min-width: toEm(1200)) {
+  @media (min-width: toEm(1200.98)) {
     padding: toRem(30) toRem(44) toRem(40) toRem(38);
     border-radius: toRem(30);
   }
@@ -277,7 +277,10 @@
   // .customers__header
   &__header {
     &:not(:last-child) {
-      margin-bottom: toRem(40);
+      margin-bottom: toRem(20);
+      @media (min-width: toEm(767.98)) {
+        margin-bottom: toRem(40);
+      }
     }
   }
   // .customers__search
@@ -334,6 +337,11 @@
         justify-content: space-between;
         gap: toRem(16);
         padding-block: toRem(6);
+        padding-inline: toRem(6);
+        &:nth-child(odd) {
+          background-color: var(--bg-primary);
+          border-radius: toRem(6);
+        }
         &::before {
           content: attr(data-label);
           color: var(--text-labeles-color);
