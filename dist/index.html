@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard CRM</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600&amp;display=swap">
+    <link rel="stylesheet" href="css/min/style.css">
+  </head>
+  <body> 
+    <div class="wrapper">
+      <div class="wrapper__burger_wrapper">
+        <button class="icon-menu icon-menu--position" type="button" aria-label="open/closed menu"><span></span></button>
+      </div>
+      <aside class="side_bar side_bar--position">
+        <div class="side_bar__logo logo"><img src="images/logo.svg" alt="logo"><span class="logo__text">Dashboard<span class="logo__version">v.01</span></span></div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link menu__link--no_arrow" href="/">
+                <svg>
+                  <use xlink:href="images/sprites/sprite.svg#key-square"></use>
+                </svg><span>Dashboard</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="/">
+                <svg>
+                  <use xlink:href="images/sprites/sprite.svg#cube-in-square"></use>
+                </svg><span>Product</span></a></li>
+            <li class="menu__item"><a class="menu__link menu__link--active" href="/">
+                <svg>
+                  <use xlink:href="images/sprites/sprite.svg#user-square"></use>
+                </svg><span>Customers</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="/">
+                <svg>
+                  <use xlink:href="images/sprites/sprite.svg#wallet"></use>
+                </svg><span>Income</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="/">
+                <svg>
+                  <use xlink:href="images/sprites/sprite.svg#discount"></use>
+                </svg><span>Promote</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="/">
+                <svg>
+                  <use xlink:href="images/sprites/sprite.svg#message"></use>
+                </svg><span>Help</span></a></li>
+          </ul>
+        </nav>
+        <figure class="user">
+          <div class="user__image"><img src="images/user-avatar/avatar.webp" alt="user avatar"></div>
+          <div class="user__info">
+            <div class="user__name">Evano</div>
+            <div class="user__position">Project Manager</div>
+          </div>
+        </figure>
+      </aside>
+      <main class="page">
+        <div class="page__title">Hello Evano 👋🏼,</div>
+        <div class="customers">
+          <div class="customers__header header_customers">
+            <div class="header_customers__content">
+              <h2 class="header_customers__title">All Customers</h2>
+              <p class="header_customers__subtitle">Active Members</p>
+            </div>
+            <form class="customers__search search" actions="/">
+              <input class="search__input" type="search" name="Search" placeholder="Search">
+              <button class="search__button" type="submit">
+                <svg>
+                  <use xlink:href="images/sprites/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <ul class="customers__body">
+            <li class="customers__row customers__row--labeles"><span>Customer Name</span><span>Company</span><span>Phone Number</span><span>Email</span><span>Country</span><span>Status</span></li>
+            <li class="customers__row"><span data-label="Customer Name"> <span>Jane Cooper</span></span><span data-label="Company"> <span>Microsoft</span></span><span data-label="Phone Number"> <span>(225) 555-0118</span></span><span data-label="Email"> <span>jane@microsoft.com</span></span><span data-label="Country"> <span>United States</span></span><span data-label="Status"> <span class="customers__status customers__status--active">Active</span></span></li>
+            <li class="customers__row"><span data-label="Customer Name"> <span>Floyd Miles</span></span><span data-label="Company"> <span>Yahoo</span></span><span data-label="Phone Number"> <span>(205) 555-0100</span></span><span data-label="Email"> <span>floyd@yahoo.com</span></span><span data-label="Country"> <span>Kiribati</span></span><span data-label="Status"> <span class="customers__status customers__status--inactive">Inactive</span></span></li>
+            <li class="customers__row"><span data-label="Customer Name"> <span>Jane Cooper</span></span><span data-label="Company"> <span>Microsoft</span></span><span data-label="Phone Number"> <span>(225) 555-0118</span></span><span data-label="Email"> <span>jane@microsoft.com</span></span><span data-label="Country"> <span>United States</span></span><span data-label="Status"> <span class="customers__status customers__status--inactive">Inactive</span></span></li>
+            <li class="customers__row"><span data-label="Customer Name"> <span>Jane Cooper</span></span><span data-label="Company"> <span>Microsoft</span></span><span data-label="Phone Number"> <span>(225) 555-0118</span></span><span data-label="Email"> <span>jane@microsoft.com</span></span><span data-label="Country"> <span>United States</span></span><span data-label="Status"> <span class="customers__status customers__status--active">Active</span></span></li>
+            <li class="customers__row"><span data-label="Customer Name"> <span>Jane Cooper</span></span><span data-label="Company"> <span>Microsoft</span></span><span data-label="Phone Number"> <span>(225) 555-0118</span></span><span data-label="Email"> <span>jane@microsoft.com</span></span><span data-label="Country"> <span>United States</span></span><span data-label="Status"> <span class="customers__status customers__status--active">Active</span></span></li>
+            <li class="customers__row"><span data-label="Customer Name"> <span>Jane Cooper</span></span><span data-label="Company"> <span>Microsoft</span></span><span data-label="Phone Number"> <span>(225) 555-0118</span></span><span data-label="Email"> <span>jane@microsoft.com</span></span><span data-label="Country"> <span>United States</span></span><span data-label="Status"> <span class="customers__status customers__status--active">Active</span></span></li>
+            <li class="customers__row"><span data-label="Customer Name"> <span>Jane Cooper</span></span><span data-label="Company"> <span>Microsoft</span></span><span data-label="Phone Number"> <span>(225) 555-0118</span></span><span data-label="Email"> <span>jane@microsoft.com</span></span><span data-label="Country"> <span>United States</span></span><span data-label="Status"> <span class="customers__status customers__status--active">Active</span></span></li>
+          </ul>
+          <div class="customers_footer">
+            <div class="customers_footer__text">Showing data 1 to 8 of 256K entries</div>
+            <ul class="page_pagination">
+              <li><a class="page_pagination__link page_pagination__link--prev" href="/" aria-label="previous page">
+                  <svg>
+                    <use xlink:href="images/sprites/sprite.svg#arrow-sharp"></use>
+                  </svg></a></li>
+              <li><a class="page_pagination__link page_pagination__link--active" href="/" aria-label="page number" title="1">1</a></li>
+              <li><a class="page_pagination__link" href="/" aria-label="page number" title="2">2</a></li>
+              <li><a class="page_pagination__link" href="/" aria-label="page number" title="3">3</a></li>
+              <li><a class="page_pagination__link" href="/" aria-label="page number" title="4">4</a></li>
+              <li><span class="page_pagination__dots">
+                   ...</span></li>
+              <li><a class="page_pagination__link" href="/" aria-label="page number" title="40">40</a></li>
+              <li><a class="page_pagination__link page_pagination__link--next" href="/" aria-label="next page">
+                  <svg>
+                    <use xlink:href="images/sprites/sprite.svg#arrow-sharp"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/min/script.js"> </script>
+  </body>
+</html>

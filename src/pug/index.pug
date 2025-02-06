@@ -1,0 +1,227 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Dashboard CRM
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap")
+    link(rel="stylesheet", href="css/min/style.css")
+  body 
+    .wrapper
+      .wrapper__burger_wrapper
+        button.icon-menu.icon-menu--position(type="button", aria-label="open/closed menu")
+          span
+
+      aside.side_bar.side_bar--position
+        .side_bar__logo.logo
+          img(src="images/logo.svg", alt="logo")
+          span.logo__text Dashboard
+            span.logo__version v.01
+        
+        nav.menu
+          ul.menu__list
+            li.menu__item
+              a.menu__link.menu__link--no_arrow(href="/")
+                svg
+                  use(xlink:href="images/sprites/sprite.svg#key-square")
+                span Dashboard
+
+            li.menu__item
+              a.menu__link(href="/")
+                svg
+                  use(xlink:href="images/sprites/sprite.svg#cube-in-square")
+                span Product
+
+            li.menu__item
+              a.menu__link.menu__link--active(href="/")
+                svg
+                  use(xlink:href="images/sprites/sprite.svg#user-square")
+                span Customers
+
+            li.menu__item
+              a.menu__link(href="/")
+                svg
+                  use(xlink:href="images/sprites/sprite.svg#wallet")
+                span Income
+
+            li.menu__item
+              a.menu__link(href="/")
+                svg
+                  use(xlink:href="images/sprites/sprite.svg#discount")
+                span Promote
+
+            li.menu__item
+              a.menu__link(href="/")
+                svg
+                  use(xlink:href="images/sprites/sprite.svg#message")
+                span Help
+
+        figure.user
+          .user__image
+            img(src="images/user-avatar/avatar.webp", alt="user avatar")
+          .user__info
+            .user__name Evano
+            .user__position Project Manager
+
+      main.page
+        .page__title Hello Evano 👋🏼,
+        
+        .customers
+          .customers__header.header_customers
+            .header_customers__content
+              h2.header_customers__title All Customers
+              p.header_customers__subtitle Active Members
+
+            form.customers__search.search(actions="/")
+              input.search__input(type="search", name="Search", placeholder="Search")
+              button.search__button(type="submit")
+                svg
+                  use(xlink:href="images/sprites/sprite.svg#search")
+
+          ul.customers__body
+            li.customers__row.customers__row--labeles
+              span Customer Name
+              span Company
+              span Phone Number
+              span Email
+              span Country
+              span Status
+
+            li.customers__row
+              span(data-label="Customer Name") 
+                span Jane Cooper
+              span(data-label="Company") 
+                span Microsoft
+              span(data-label="Phone Number") 
+                span (225) 555-0118
+              span(data-label="Email") 
+                span jane@microsoft.com
+              span(data-label="Country") 
+                span United States
+              span(data-label="Status") 
+                span.customers__status.customers__status--active Active
+
+            li.customers__row
+              span(data-label="Customer Name") 
+                span Floyd Miles
+              span(data-label="Company") 
+                span Yahoo
+              span(data-label="Phone Number") 
+                span (205) 555-0100
+              span(data-label="Email") 
+                span floyd@yahoo.com
+              span(data-label="Country") 
+                span Kiribati
+              span(data-label="Status") 
+                span.customers__status.customers__status--inactive Inactive
+            
+            li.customers__row
+              span(data-label="Customer Name") 
+                span Jane Cooper
+              span(data-label="Company") 
+                span Microsoft
+              span(data-label="Phone Number") 
+                span (225) 555-0118
+              span(data-label="Email") 
+                span jane@microsoft.com
+              span(data-label="Country") 
+                span United States
+              span(data-label="Status") 
+                span.customers__status.customers__status--inactive Inactive
+
+            li.customers__row
+              span(data-label="Customer Name") 
+                span Jane Cooper
+              span(data-label="Company") 
+                span Microsoft
+              span(data-label="Phone Number") 
+                span (225) 555-0118
+              span(data-label="Email") 
+                span jane@microsoft.com
+              span(data-label="Country") 
+                span United States
+              span(data-label="Status") 
+                span.customers__status.customers__status--active Active
+
+            li.customers__row
+              span(data-label="Customer Name") 
+                span Jane Cooper
+              span(data-label="Company") 
+                span Microsoft
+              span(data-label="Phone Number") 
+                span (225) 555-0118
+              span(data-label="Email") 
+                span jane@microsoft.com
+              span(data-label="Country") 
+                span United States
+              span(data-label="Status") 
+                span.customers__status.customers__status--active Active
+
+            li.customers__row
+              span(data-label="Customer Name") 
+                span Jane Cooper
+              span(data-label="Company") 
+                span Microsoft
+              span(data-label="Phone Number") 
+                span (225) 555-0118
+              span(data-label="Email") 
+                span jane@microsoft.com
+              span(data-label="Country") 
+                span United States
+              span(data-label="Status") 
+                span.customers__status.customers__status--active Active
+
+            li.customers__row
+              span(data-label="Customer Name") 
+                span Jane Cooper
+              span(data-label="Company") 
+                span Microsoft
+              span(data-label="Phone Number") 
+                span (225) 555-0118
+              span(data-label="Email") 
+                span jane@microsoft.com
+              span(data-label="Country") 
+                span United States
+              span(data-label="Status") 
+                span.customers__status.customers__status--active Active
+
+          .customers_footer
+            .customers_footer__text
+              | Showing data 1 to 8 of 256K entries
+
+            ul.page_pagination
+              li
+                a.page_pagination__link.page_pagination__link--prev(href="/", aria-label="previous page")
+                  svg
+                    use(xlink:href="images/sprites/sprite.svg#arrow-sharp")
+
+              li
+                a.page_pagination__link.page_pagination__link--active(href="/", aria-label="page number", title="1")
+                  | 1
+
+              li
+                a.page_pagination__link(href="/", aria-label="page number", title="2")
+                  | 2
+
+              li
+                a.page_pagination__link(href="/", aria-label="page number", title="3")
+                  | 3
+
+              li
+                a.page_pagination__link(href="/", aria-label="page number", title="4")
+                  | 4
+                
+              li
+                span.page_pagination__dots 
+                  | ...
+
+              li
+                a.page_pagination__link(href="/", aria-label="page number", title="40")
+                  | 40
+
+              li
+                a.page_pagination__link.page_pagination__link--next(href="/", aria-label="next page")
+                  svg
+                    use(xlink:href="images/sprites/sprite.svg#arrow-sharp")
+
+    script(src="js/min/script.js") 
