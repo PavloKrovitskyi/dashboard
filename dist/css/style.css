@@ -292,6 +292,7 @@ a {
     height: 100%;
     z-index: 100;
     transform: translateX(-100%);
+    overflow: auto;
     visibility: hidden;
     transition: transform 0.5s, visibility 0.5s;
   }
@@ -476,7 +477,7 @@ a {
   line-height: 1.5;
   letter-spacing: -0.01em; /* -0.14/14 */
 }
-@media (min-width: 55.68625em) {
+@media (min-width: 60.68625em) {
   .customers__row {
     display: grid;
     grid-template-columns: 17% 12.6% 15.3% 21.2% 13.5% 1fr;
@@ -501,7 +502,7 @@ a {
   padding-bottom: 0.875rem;
   color: var(--text-labeles-color);
 }
-@media (max-width: 55.625em) {
+@media (max-width: 60.625em) {
   .customers__row--labeles {
     display: none;
   }
@@ -510,7 +511,7 @@ a {
   width: 150%;
   transform: translateX(-25%);
 }
-@media (max-width: 55.625em) {
+@media (max-width: 60.625em) {
   .customers__row > span {
     display: flex;
     align-items: center;

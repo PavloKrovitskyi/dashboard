@@ -91,6 +91,7 @@
       height: 100%;
       z-index: 100;
       transform: translateX(-100%);
+      overflow: auto;
       visibility: hidden;
       transition:
         transform 0.5s,
@@ -295,7 +296,7 @@
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: -0.01em; /* -0.14/14 */
-    @media (min-width: toEm(890.98)) {
+    @media (min-width: toEm(970.98)) {
       display: grid;
       grid-template-columns: 17% 12.6% 15.3% 21.2% 13.5% 1fr;
       justify-content: space-between;
@@ -318,7 +319,7 @@
     &--labeles {
       padding-bottom: toRem(14);
       color: var(--text-labeles-color);
-      @media (max-width: toEm(890)) {
+      @media (max-width: toEm(970)) {
         display: none;
       }
       &::after {
@@ -327,7 +328,7 @@
       }
     }
     & > span {
-      @media (max-width: toEm(890)) {
+      @media (max-width: toEm(970)) {
         display: flex;
         align-items: center;
         justify-content: space-between;
