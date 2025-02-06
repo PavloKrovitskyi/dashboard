@@ -26,7 +26,7 @@ const paths = {
     dest: 'dist'
   },
   images: {
-    src: 'src/images/**/*.{jpg,jpeg,png,gif,webp}',
+    src: 'src/images/**/*.{jpg,jpeg,png,gif,webp,svg}',
     dest: 'dist/images'
   },
   svg: {
