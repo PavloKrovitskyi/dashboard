@@ -8,6 +8,8 @@ import cleanCSS from 'gulp-clean-css';
 import terser from 'gulp-terser';
 import svgSprite from 'gulp-svg-sprite';
 import { deleteAsync } from 'del';
+import postcss from 'gulp-postcss';
+import mqpacker from 'css-mqpacker';
 
 const server = browserSync.create();
 const paths = {
@@ -24,7 +26,7 @@ const paths = {
     dest: 'dist'
   },
   images: {
-    src: 'src/images/**/*.{jpg,jpeg,png,gif,webp,avif,svg}',
+    src: 'src/images/**/*.{jpg,jpeg,png,gif,webp}',
     dest: 'dist/images'
   },
   svg: {
@@ -41,6 +43,7 @@ export const styles = () => {
   return gulp.src(paths.styles.src)
     .pipe(scssCompiler().on('error', scssCompiler.logError))
     .pipe(autoprefixer())
+    .pipe(postcss([mqpacker()]))
     .pipe(gulp.dest(paths.styles.dest)) // Немінімізована версія
     .pipe(cleanCSS())
     .pipe(gulp.dest(paths.styles.dest + '/min')) // Мінімізована версія
